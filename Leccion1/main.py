@@ -138,7 +138,7 @@ if numero % 2 == 0:
     print(f"El valor del numero es: {numero} es un numero par")
 else:
     print(f"El valor del numero es: {numero} es un numero impar")
-'''
+
 
 #Determinar si es mayor de edad
 edad = int(input("Ingrese su edad: "))
@@ -147,4 +147,71 @@ if edad >= 18:
     print("Es mayor de edad",edad)
 else:
     print(f"Es menor de edad, usted tiene {edad}, y no puede tener esa bebida en la mano")
+
+num = int(input("Ingrese un valor numerico: "))
+if num >= 0 and num <= 5:
+    print(f"El numero: {num} se encuentra entre el rango de 0 y 5")
+else:
+    print(f"El numero: {num} no esta dentro del rango")
+
+edad = int(input("Ingrese su edad: "))
+if edad <20 or edad>30:
+    print(f"El rango de edad esta fuera de lo estipulado")
+else:
+    if edad>=20 and edad <=30:
+        print(f"Estas dentro del rango")
+
+edad = int(input("Digite su edad: "))
+veinte = edad >= 20 and edad <30
+print(veinte)
+treinta = edad >= 30 and edad <40
+print(treinta)
+if veinte or treinta:
+    print('Estas dentro del rango de los (20\'0) a (30\'0) años')
+else:
+    print("No estas dentro del rango de los (20'0) a (30'0) años")
+
+edad = int(input("Digite su edad: "))
+veinte = edad >= 20 and edad <30
+print(veinte)
+treinta = edad >= 30 and edad <40
+print(treinta)
+if veinte:
+    print('Estas dentro del rango de los (20\'0)  años')
+elif treinta:
+    print("No estas dentro del rango de los  (30'0) años")
+else:
+    print("No estas dentro del rango de los (20'0) a (30'0) años")
+
+if (20 <= edad <30) or (30 <= edad < 40): #Sintaxis simplificada del operador and
+
+numero1 = int(input("Digite el valor para el numero 1: "))
+numero2 = int(input("Digite el valor para el numero 2: "))
+if numero1 > numero2:
+    print(f"El numero 1 es mayor, {numero1}")
+elif numero2 > numero1:
+    print(f"El numero 2 es mayor, {numero2}")
+else:
+    print(f"Los numero son iguales")
+''
+#Ejercicio: Tienda de libros
+print('Digite los siguientes datos del libro: ')
+nombre = input('Digite el nombre del libro: ')
+id = int(input('Digite el id del libro: '))
+precio = float(input('Digite el precio del libro: '))
+envioGratuito = input('Indicar si el envio del libro es gratuito (True/False): ')
+if envioGratuito == 'True':
+    envioGratuito = True
+elif envioGratuito == 'False':
+    envioGratuito = False
+else:
+    envioGratuito = 'El valor es incorrectom debe escribir True/False'
+print(f'''
+    Nombre: {nombre}
+    Id : {id}
+    Precio: {precio}
+    Envio gratuito? : {envioGratuito}
+
+''')
+
 
