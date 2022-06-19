@@ -13,7 +13,7 @@ elif condicion == False:
     print('Condicion Falsa')
 else:
     print('condicion sin especificar')
-
+###
 num = int(input('Digite un num en el rango de 1 a 3: '))
 numTexto = ''
 if num == 1:
@@ -25,14 +25,15 @@ elif num == 3:
 else:
     numTexto='Has ingresado un numero fuera del rango'
 print(f'El numero ingresado es: {num} - {numTexto}')
-
+###
 
 #Sintaxis simplificada el operador ternario
 condicion = True
 if condicion:
     print('Condicion Verdadera')
 else:
-    print('Condicion Falsa')
-'''
+    print('Condicion Falsa'
+
 condicion = True
 print('Condicion Verdadera') if condicion else print('Condicion Falsa')
+'''

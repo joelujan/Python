@@ -1,3 +1,4 @@
+
 mes = int(input("Ingrese el mes del año que desea consultar: "))
 estacion = None
 if 1>= mes <= 3:

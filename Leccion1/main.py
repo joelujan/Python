@@ -193,7 +193,7 @@ elif numero2 > numero1:
     print(f"El numero 2 es mayor, {numero2}")
 else:
     print(f"Los numero son iguales")
-''
+
 #Ejercicio: Tienda de libros
 print('Digite los siguientes datos del libro: ')
 nombre = input('Digite el nombre del libro: ')
@@ -206,12 +206,11 @@ elif envioGratuito == 'False':
     envioGratuito = False
 else:
     envioGratuito = 'El valor es incorrectom debe escribir True/False'
-print(f'''
+print(f"
     Nombre: {nombre}
     Id : {id}
     Precio: {precio}
     Envio gratuito? : {envioGratuito}
-
-''')
-
+    ")
+'''
 

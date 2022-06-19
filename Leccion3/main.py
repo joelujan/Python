@@ -41,7 +41,7 @@ for letra in 'Alemania':
         break #rompe la estructura y termina
 else:
     print('Fin del ciclo for')
-'''
+
 #Palabra reservada continue
 for i in range(6):
     if i % 2 == 0:
@@ -50,4 +50,6 @@ for i in range(6):
 for i in range(6):
     if i % 2 != 0:
         continue #Eludir o anular todos los numeros q son impares
-    print(f'Valor: {i}')
+        print(f'Valor: {i}')'''
+
+
