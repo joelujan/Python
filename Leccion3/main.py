@@ -1,5 +1,5 @@
 #Ciclo While
-'''condicion = True
+condicion = True
 while condicion:
     print('Ejecutando el ciclo While')
 else:
@@ -50,6 +50,6 @@ for i in range(6):
 for i in range(6):
     if i % 2 != 0:
         continue #Eludir o anular todos los numeros q son impares
-        print(f'Valor: {i}')'''
+        print(f'Valor: {i}')
 
 
