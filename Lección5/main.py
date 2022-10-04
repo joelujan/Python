@@ -80,3 +80,41 @@ def listarNombres(*nombres):  # Parametro: *nombres o *args para que varien los 
         print(nombre)
 listarNombres('Lucas', 'José', 'Claudia', 'Rosa', 'María') #Argumentos
 listarNombres('Marcos', 'Daniel', 'Romina', 'Pepe', 'Marcela', 'Carlos')
+
+# Argumentos variables para un diccionario
+
+
+def listarTerminos(**kwargs): #se utiliza ** xq va a recibir un diccionario y kwargs para hacerlo generico para recibir los argumentos
+    for llave,valor in kwargs.items(): #kwargs : key word argument
+        print(f'{llave} : {valor}')
+listarTerminos() #no recibe nada, nada se va a mostrar
+listarTerminos(IDE = 'Interface Development Environment', PK = 'Primary Key') #Las llaves no llevan comillas, y el valor puede ser cualquier tipo de dato
+listarTerminos(Nombre = 'Leonel Messi') #No acepta un numero como llave
+
+# Distintos tipos de datos como argumentos, definir una funcion q reciba una lista de elementos
+
+
+def desplegarNombres(nombres):
+    for nombre in nombres:
+        print(nombre)
+
+nombres2 = ['Tito', 'Pedro', 'Carlos']
+desplegarNombres(nombres2)
+desplegarNombres('Carla')
+# desplegarNombres(10,11) Los numeros no son un objeto iterable xq son int
+desplegarNombres((10,11)) #Aca si, xq es una tupla, para poder recorrer estos numeros, pero no puede ser un solo elemento
+desplegarNombres([22,55]) # Aca tb se pueden recorrer xq es una lista
+
+# Funciones Recursivas (Caso base y caso Recursivo)
+
+
+def factorial(numero): # Se envia como argumento y se recibe como parametro
+    if numero == 1:
+        return 1 # Caso Base
+    else:
+        return numero * factorial(numero-1) #Caso recursivo
+
+numeroIng = int(input("Por favor ingrese el numero para el cual desea obtener el factorial: "))
+resultado = factorial(numeroIng)
+#resultado = factorial(5) # Lo hacemos en codigo duro
+print(f'El factorial del numero {numeroIng} es : {resultado}')
